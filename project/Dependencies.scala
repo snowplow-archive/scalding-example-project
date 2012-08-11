@@ -27,7 +27,7 @@ object Dependencies {
 
   object Libraries {
     val scalding    = "com.twitter"                %%  "scalding"            % V.scalding
-    val specs       = "org.scala-tools.testing"    %%  "specs"               % V.specs
+    val specs       = "org.scala-tools.testing"    %%  "specs"               % V.specs        % "test"
     // val specs2      = "org.specs2"                 %% "specs2"               % V.specs2      % "test" TODO: update to specs2
     // Add additional libraries from mvnrepository.com (SBT syntax) here...
   }
