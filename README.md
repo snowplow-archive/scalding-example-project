@@ -1,6 +1,6 @@
 # scalding-example-project
 
-`scalding-example-project` is the Scalding [`WordCountJob`] [wordcount] example as a standalone project.
+Scalding Example Project` is Twitter's Scalding [`WordCountJob`] [wordcount] example as a standalone project.
 
 This was built by the [SnowPlow Analytics] [snowplow] team as a proof of concept for running Scalding on Amazon EMR.
 
@@ -17,6 +17,18 @@ The 'fat jar' is now available as:
 
     target/scalding-example-project-0.0.1.jar
 
+## Unit testing
+
+The `assembly` command above runs the test suite - but you can also run this manually with:
+
+    $ sbt test
+    <snip>
+    [info] + A WordCount job should
+	[info]   + count words correctly
+	[info] Passed: : Total 2, Failed 0, Errors 0, Passed 2, Skipped 0
+
+(Or simply `test` when inside the SBT console.)
+
 ## Running on Amazon EMR
 
 First, upload the jar to S3 - if you haven't yet built the project (see above), you can grab the latest copy of the jar from [Downloads] [downloads].
@@ -29,8 +41,8 @@ Finally, you can run using the Ruby client:
       --jar s3n://{{JAR_BUCKET}}/scalding-example-project-0.0.1.jar \
       --arg com.snowplowanalytics.hadoop.scalding.WordCountJob \
       --arg --hdfs \
-      --arg --input --arg s3n://{{INPUT_BUCKET}}/hello.txt \
-      --arg --output --arg s3n://{{OUTPUT_BUCKET}}/results
+      --arg --input --arg s3n://{{IN_BUCKET}}/hello.txt \
+      --arg --output --arg s3n://{{OUT_BUCKET}}/results
 
 ## Checking your results
 
