@@ -1,8 +1,8 @@
 # scalding-example-project
 
-This project is the Scalding WordCountJob example as a standalone project.
+`scalding-example-project` is the Scalding [`WordCountJob`] [wordcount] example as a standalone project.
 
-This was built by the **SnowPlow Analytics** team as a smoke test for running Scalding on Amazon EMR.
+This was built by the [SnowPlow Analytics] [snowplow] team as a proof of concept for running Scalding on Amazon EMR.
 
 ## Building
 
@@ -34,9 +34,20 @@ Finally, you can run using the Ruby client:
 
 Check the output once the run has completed.
 
+## Troubleshooting
+
+If you are trying to run this on a non-EMR environment, you may need to edit:
+
+    project/BuildSettings.scala
+
+And comment out the Hadoop jar exclusions:
+
+    // "hadoop-core-0.20.2.jar", // Provided by Amazon EMR. Delete this line if you're not on EMR
+    // "hadoop-tools-0.20.2.jar" // "
+
 ## Next steps
 
-You can fork this project and evolve this into your own Scalding job.
+Fork this project and adapt it into your own custom Scalding job.
 
 ## Copyright and license
 
@@ -51,5 +62,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
+[wordcount]: https://github.com/twitter/scalding/blob/master/README.md
+[snowplow]: http://snowplowanalytics.com
 [downloads]: https://github.com/snowplow/scalding-example-project/downloads
 [license]: http://www.apache.org/licenses/LICENSE-2.0
