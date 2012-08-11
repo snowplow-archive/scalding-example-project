@@ -30,9 +30,10 @@ object BuildSettings {
   import AssemblyKeys._
   lazy val sbtAssemblySettings = assemblySettings ++ Seq(
 
-    assembleArtifact in packageScala := false,
+    // Slightly cleaner jar name
     jarName in assembly <<= (name, version) { (name, version) => name + "-" + version + ".jar" },
     
+    // Drop these jars
     excludedJars in assembly <<= (fullClasspath in assembly) map { cp =>
       val excludes = Set(
         "jsp-api-2.1-6.1.14.jar",
