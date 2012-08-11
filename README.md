@@ -30,9 +30,22 @@ Finally, you can run using the Ruby client:
       --arg com.snowplowanalytics.hadoop.scalding.WordCountJob \
       --arg --hdfs \
       --arg --input --arg s3n://{{INPUT_BUCKET}}/hello.txt \
-      --arg --output --arg s3n://{{OUTPUT_BUCKET}}/word-count.txt
+      --arg --output --arg s3n://{{OUTPUT_BUCKET}}/results
 
-Check the output once the run has completed.
+## Checking your results
+
+Once the output has completed, you should see a folder structure like this in your output bucket:
+
+     results
+     |
+     +- _SUCCESS
+     +- part-00000
+
+Inside `part-00000` should be:
+
+	goodbye	1
+	hello	1
+	world	2
 
 ## Troubleshooting
 

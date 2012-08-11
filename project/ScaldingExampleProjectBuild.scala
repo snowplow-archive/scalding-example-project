@@ -28,7 +28,8 @@ object ScaldingExampleProjectBuild extends Build {
     .settings(buildSettings: _*)
     .settings(
       libraryDependencies ++= Seq(
-        Libraries.scalding
+        Libraries.scalding,
+        Libraries.specs
         // Add your additional libraries here (comma-separated)...
       )
     )

@@ -15,16 +15,20 @@ import sbt._
 object Dependencies {
   val resolutionRepos = Seq(
     ScalaToolsSnapshots,
-    "Concurrent Maven Repo" at "http://conjars.org/repo"
+    "Concurrent Maven Repo" at "http://conjars.org/repo" // For Scalding, Cascading etc
   )
 
   object V {
     val scalding  = "0.7.3"
+    val specs     = "1.6.6"
+    // val specs2    = "1.8" TODO: update to specs2
     // Add versions for your additional libraries here...
   }
 
   object Libraries {
-    val scalding    = "com.twitter"                %  "scalding_2.9.2"       % V.scalding
+    val scalding    = "com.twitter"                %%  "scalding"            % V.scalding
+    val specs       = "org.scala-tools.testing"    %%  "specs"               % V.specs
+    // val specs2      = "org.specs2"                 %% "specs2"               % V.specs2      % "test" TODO: update to specs2
     // Add additional libraries from mvnrepository.com (SBT syntax) here...
   }
 }
