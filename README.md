@@ -1,6 +1,6 @@
 # scalding-example-project
 
-Scalding Example Project` is Twitter's Scalding [`WordCountJob`] [wordcount] example as a standalone project.
+**Scalding Example Project** is Twitter's Scalding [`WordCountJob`] [wordcount] example adapted to run on Hadoop as a standalone project.
 
 This was built by the [SnowPlow Analytics] [snowplow] team as a proof of concept for running Scalding on Amazon EMR.
 
