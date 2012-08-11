@@ -1,8 +1,10 @@
-# scalding-example-project
+# Scalding Example Project
 
-**Scalding Example Project** is Twitter's Scalding [`WordCountJob`] [wordcount] example adapted to run on Hadoop as a standalone project.
+## Introduction
 
-This was built by the [SnowPlow Analytics] [snowplow] team as a proof of concept for running Scalding on Amazon EMR.
+This is Twitter's Scalding [`WordCountJob`] [wordcount] example adapted to run on Hadoop as a standalone job - i.e. without requiring `scald.rb` etc.
+
+This was built as a Scala SBT 0.11.3 project by the [SnowPlow Analytics] [snowplow] team as a proof of concept for running ETL jobs built in Scalding on Amazon EMR.
 
 ## Building
 
