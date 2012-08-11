@@ -26,17 +26,17 @@ Next, upload the data file `data/hello.txt` to S3.
 Finally, you can run using the Ruby client:
 
     $ elastic-mapreduce --create --name "scalding-example-project" \
-      --jar s3n://{{JAR_LOCATION}}
+      --jar s3n://{{JAR_BUCKET}}/scalding-example-project-0.0.1.jar \
       --arg com.snowplowanalytics.hadoop.scalding.WordCountJob \
       --arg --hdfs \
-      --arg --input --arg s3n://{{HELLOTXT_LOCATION}} \
-      --arg --output --arg s3n://{{OUTPUTFILELOCATION}}
+      --arg --input --arg s3n://{{INPUT_BUCKET}}/hello.txt \
+      --arg --output --arg s3n://{{OUTPUT_BUCKET}}/word-count.txt
 
 Check the output once the run has completed.
 
 ## Next steps
 
-You can fork this project and turn this into your own Scalding job.
+You can fork this project and evolve this into your own Scalding job.
 
 ## Copyright and license
 
