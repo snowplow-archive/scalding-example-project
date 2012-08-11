@@ -62,6 +62,10 @@ And comment out the Hadoop jar exclusions:
 
 Fork this project and adapt it into your own custom Scalding job.
 
+## Roadmap
+
+Nothing planned - although it would be nice to upgrade from Specs to Specs2 for the testing, and then to bump Scala to 2.9.1. If you want to do this, feel free to submit a pull request.
+
 ## Copyright and license
 
 Copyright 2012 SnowPlow Analytics Ltd, with some portions copyright 2012 Twitter, Inc.
