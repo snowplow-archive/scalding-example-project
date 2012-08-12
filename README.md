@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This is Twitter's Scalding [`WordCountJob`] [wordcount] example adapted to run on Hadoop as a standalone job - i.e. without requiring `scald.rb` etc.
+This is Twitter's [`WordCountJob`] [wordcount] example for Scalding adapted to run on Hadoop as a standalone job - i.e. without requiring `scald.rb` etc.
 
-This was built as a Scala SBT 0.11.3 project by the [SnowPlow Analytics] [snowplow] team as a proof of concept for running ETL jobs built in Scalding on Amazon EMR.
+This was built as a Scala SBT project by the [SnowPlow Analytics] [snowplow] team, as a proof of concept for running ETL jobs coded in Scalding on [Amazon Elastic MapReduce] [emr].
 
 ## Building
 
@@ -95,5 +95,6 @@ limitations under the License.
 
 [wordcount]: https://github.com/twitter/scalding/blob/master/README.md
 [snowplow]: http://snowplowanalytics.com
+[emr]: http://aws.amazon.com/elasticmapreduce/
 [downloads]: https://github.com/snowplow/scalding-example-project/downloads
 [license]: http://www.apache.org/licenses/LICENSE-2.0
