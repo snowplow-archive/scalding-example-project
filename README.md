@@ -12,8 +12,7 @@ Assuming you already have SBT installed:
 
     $ git clone git://github.com/snowplow/scalding-example-project.git
     $ cd scalding-example-project
-    $ sbt
-    scalding-example-project > assembly
+    $ sbt assembly
 
 The 'fat jar' is now available as:
 
@@ -28,8 +27,6 @@ The `assembly` command above runs the test suite - but you can also run this man
     [info] + A WordCount job should
 	[info]   + count words correctly
 	[info] Passed: : Total 2, Failed 0, Errors 0, Passed 2, Skipped 0
-
-When inside the SBT console, simply type `test` to see the above.
 
 ## Running on Amazon EMR
 
