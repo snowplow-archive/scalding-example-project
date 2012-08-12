@@ -29,15 +29,15 @@ The `assembly` command above runs the test suite - but you can also run this man
 	[info]   + count words correctly
 	[info] Passed: : Total 2, Failed 0, Errors 0, Passed 2, Skipped 0
 
-(Or simply `test` when inside the SBT console.)
+When inside the SBT console, simply type `test` to see the above.
 
 ## Running on Amazon EMR
 
-First, upload the jar to S3 - if you haven't yet built the project (see above), you can grab the latest copy of the jar from [Downloads] [downloads].
+First, upload the jar to S3 - if you haven't yet built the project (see above), you can grab the latest copy of the jar from this repo's [Downloads] [downloads].
 
-Next, upload the data file `data/hello.txt` to S3.
+Next, upload the data file [`data/hello.txt`] [hello-txt] to S3.
 
-Finally, you can run using the Ruby client:
+Finally, you are ready to run this job using the [Amazon Ruby EMR client] [emr-client]:
 
     $ elastic-mapreduce --create --name "scalding-example-project" \
       --jar s3n://{{JAR_BUCKET}}/scalding-example-project-0.0.1.jar \
@@ -55,7 +55,7 @@ Once the output has completed, you should see a folder structure like this in yo
      +- _SUCCESS
      +- part-00000
 
-Inside `part-00000` should be:
+Download the `part-00000` file and check that it contains:
 
 	goodbye	1
 	hello	1
@@ -63,7 +63,7 @@ Inside `part-00000` should be:
 
 ## Troubleshooting
 
-If you are trying to run this on a non-EMR environment, you may need to edit:
+If you are trying to run this on a non-Amazon EMR environment, you may need to edit:
 
     project/BuildSettings.scala
 
@@ -78,11 +78,11 @@ Fork this project and adapt it into your own custom Scalding job.
 
 ## Roadmap
 
-Nothing planned - although it would be nice to upgrade from Specs to Specs2 for the testing, and then to bump Scala to 2.9.1. If you want to do this, feel free to submit a pull request.
+Nothing planned - although it would be nice to upgrade from Specs to Specs2 for the testing, and bump Scala to 2.9.1 at the same time. If you would like to do this, feel free to submit a pull request.
 
 ## Copyright and license
 
-Copyright 2012 SnowPlow Analytics Ltd, with some portions copyright 2012 Twitter, Inc.
+Copyright 2012 SnowPlow Analytics Ltd, with significant portions copyright 2012 Twitter, Inc.
 
 Licensed under the [Apache License, Version 2.0] [license] (the "License");
 you may not use this software except in compliance with the License.
@@ -98,4 +98,6 @@ limitations under the License.
 [snowplow]: http://snowplowanalytics.com
 [emr]: http://aws.amazon.com/elasticmapreduce/
 [downloads]: https://github.com/snowplow/scalding-example-project/downloads
+[hello-txt]: https://github.com/snowplow/scalding-example-project/raw/master/data/hello.txt
+[emr-client]: http://aws.amazon.com/developertools/2264
 [license]: http://www.apache.org/licenses/LICENSE-2.0
