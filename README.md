@@ -73,7 +73,7 @@ And comment out the Hadoop jar exclusions:
 
 Fork this project and adapt it into your own custom Scalding job.
 
-Use the excellent [Elasticity] [elasticity] Ruby library to invoke/schedule your Scalding job.
+Use the excellent [Elasticity] [elasticity] Ruby library to invoke/schedule your Scalding job on EMR.
 
 ## Roadmap
 
