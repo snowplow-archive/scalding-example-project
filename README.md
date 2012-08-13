@@ -4,7 +4,7 @@
 
 This is Twitter's [`WordCountJob`] [wordcount] example for [Scalding] [scalding] adapted to run on Hadoop as a standalone job - i.e. without requiring `scald.rb` etc.
 
-This was built as a Scala SBT project by the [SnowPlow Analytics] [snowplow] team, as a proof of concept for running ETL jobs coded in Scalding on [Amazon Elastic MapReduce] [emr].
+This was built as a Scala SBT project by the [SnowPlow Analytics] [snowplow] team, as a proof of concept for porting our ETL jobs to Scalding to run on [Amazon Elastic MapReduce] [emr].
 
 ## Building
 
@@ -73,6 +73,8 @@ And comment out the Hadoop jar exclusions:
 
 Fork this project and adapt it into your own custom Scalding job.
 
+Use the excellent [Elasticity] [elasticity] Ruby library to invoke/schedule your Scalding job.
+
 ## Roadmap
 
 Nothing planned - although it would be nice to upgrade from Specs to Specs2 for the testing, and bump Scala to 2.9.1 at the same time. If you would like to do this, feel free to submit a pull request.
@@ -97,4 +99,5 @@ limitations under the License.
 [downloads]: https://github.com/snowplow/scalding-example-project/downloads
 [hello-txt]: https://github.com/snowplow/scalding-example-project/raw/master/data/hello.txt
 [emr-client]: http://aws.amazon.com/developertools/2264
+[elasticity]: https://github.com/rslifka/elasticity
 [license]: http://www.apache.org/licenses/LICENSE-2.0
