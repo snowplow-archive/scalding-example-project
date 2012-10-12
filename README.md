@@ -43,6 +43,8 @@ Finally, you are ready to run this job using the [Amazon Ruby EMR client] [emr-c
       --arg --input --arg s3n://{{IN_BUCKET}}/hello.txt \
       --arg --output --arg s3n://{{OUT_BUCKET}}/results
 
+Replace `{{JAR_BUCKET}}`, `{{IN_BUCKET}}` and `{{OUT_BUCKET}}` with the appropriate paths.
+
 ## Checking your results
 
 Once the output has completed, you should see a folder structure like this in your output bucket:
