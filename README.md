@@ -1,4 +1,4 @@
-# Scalding Example Code
+# Scalding Example Project
 
 ## Introduction
 
