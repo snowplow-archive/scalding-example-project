@@ -16,7 +16,7 @@ Assuming you already have SBT installed:
 
 The 'fat jar' is now available as:
 
-    target/scalding-example-project-0.0.1.jar
+    target/scalding-example-project-0.0.2.jar
 
 ## Unit testing
 
@@ -79,11 +79,11 @@ Use the excellent [Elasticity] [elasticity] Ruby library to invoke/schedule your
 
 ## Roadmap
 
-Nothing planned - although it would be nice to upgrade from Specs to Specs2 for the testing, and bump Scala to 2.9.1 at the same time. If you would like to do this, feel free to submit a pull request.
+Nothing planned currently.
 
 ## Copyright and license
 
-Copyright 2012 SnowPlow Analytics Ltd, with significant portions copyright 2012 Twitter, Inc.
+Copyright 2012-2013 SnowPlow Analytics Ltd, with significant portions copyright 2012 Twitter, Inc.
 
 Licensed under the [Apache License, Version 2.0] [license] (the "License");
 you may not use this software except in compliance with the License.

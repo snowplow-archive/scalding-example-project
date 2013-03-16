@@ -13,7 +13,7 @@
 package com.snowplowanalytics.hadoop.scalding
 
 // Specs2
-import org.specs.Specification
+import org.specs2.mutable.Specification
 
 // Scalding
 import com.twitter.scalding._

@@ -19,16 +19,16 @@ object Dependencies {
   )
 
   object V {
-    val scalding  = "0.7.3"
-    val specs     = "1.6.6"
-    // val specs2    = "1.8" TODO: update to specs2
+    val scalding  = "0.8.4"
+    val specs2    = "1.12.3" // -> "1.13" when we bump to Scala 2.10.0
     // Add versions for your additional libraries here...
   }
 
   object Libraries {
-    val scalding    = "com.twitter"                %%  "scalding"            % V.scalding
-    val specs       = "org.scala-tools.testing"    %%  "specs"               % V.specs        % "test"
-    // val specs2      = "org.specs2"                 %% "specs2"               % V.specs2      % "test" TODO: update to specs2
+    val scaldingCore = "com.twitter"                %%  "scalding-core"       % V.scalding
     // Add additional libraries from mvnrepository.com (SBT syntax) here...
+
+    // Scala (test only)
+    val specs2       = "org.specs2"                 %% "specs2"               % V.specs2       % "test"
   }
 }
