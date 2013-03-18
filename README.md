@@ -37,7 +37,7 @@ Next, upload the data file [`data/hello.txt`] [hello-txt] to S3.
 Finally, you are ready to run this job using the [Amazon Ruby EMR client] [emr-client]:
 
     $ elastic-mapreduce --create --name "scalding-example-project" \
-      --jar s3n://{{JAR_BUCKET}}/scalding-example-project-0.0.1.jar \
+      --jar s3n://{{JAR_BUCKET}}/scalding-example-project-0.0.2.jar \
       --arg com.snowplowanalytics.hadoop.scalding.WordCountJob \
       --arg --hdfs \
       --arg --input --arg s3n://{{IN_BUCKET}}/hello.txt \
