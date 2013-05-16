@@ -1,4 +1,4 @@
-# Scalding Example Project
+# Scalding Example Project [![Build Status](https://travis-ci.org/snowplow/scalding-example-project.png)](https://travis-ci.org/snowplow/scalding-example-project)
 
 ## Introduction
 
