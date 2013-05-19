@@ -19,13 +19,15 @@ object Dependencies {
   )
 
   object V {
-    val scalding  = "0.8.4"
+    val scalding  = "0.8.5"
+    val hadoop    = "0.20.2"
     val specs2    = "1.12.3" // -> "1.13" when we bump to Scala 2.10.0
     // Add versions for your additional libraries here...
   }
 
   object Libraries {
     val scaldingCore = "com.twitter"                %%  "scalding-core"       % V.scalding
+    val hadoopCore   = "org.apache.hadoop"          % "hadoop-core"           % V.hadoop       % "provided"
     // Add additional libraries from mvnrepository.com (SBT syntax) here...
 
     // Scala (test only)
