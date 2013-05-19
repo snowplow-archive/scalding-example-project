@@ -18,7 +18,7 @@ object BuildSettings {
   // Basic settings for our app
   lazy val basicSettings = Seq[Setting[_]](
     organization  := "SnowPlow Analytics Ltd",
-    version       := "0.0.2",
+    version       := "0.0.3",
     description   := "The Scalding WordCountJob example as a standalone SBT project, ready for Amazon EMR",
     scalaVersion  := "2.9.2", // -> 2.10.0 when Scalding is ready
     scalacOptions := Seq("-deprecation", "-encoding", "utf8"),
