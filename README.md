@@ -32,9 +32,13 @@ The `assembly` command above runs the test suite - but you can also run this man
 
 ## Running on Amazon EMR
 
+### Prepare
+
 First, upload the jar to S3 - if you haven't yet built the project (see above), you can grab the latest copy of the jar from this repo's [Downloads] [downloads].
 
 Next, upload the data file [`data/hello.txt`] [hello-txt] to S3.
+
+### Run
 
 Finally, you are ready to run this job using the [Amazon Ruby EMR client] [emr-client]:
 
@@ -47,7 +51,7 @@ Finally, you are ready to run this job using the [Amazon Ruby EMR client] [emr-c
 
 Replace `{{JAR_BUCKET}}`, `{{IN_BUCKET}}` and `{{OUT_BUCKET}}` with the appropriate paths.
 
-## Checking your results
+### Inspect
 
 Once the output has completed, you should see a folder structure like this in your output bucket:
 
@@ -62,7 +66,7 @@ Download the `part-00000` file and check that it contains:
 	hello	1
 	world	2
 
-## Troubleshooting
+## Running on your own Hadoop cluster
 
 If you are trying to run this on a non-Amazon EMR environment, you may need to edit:
 
