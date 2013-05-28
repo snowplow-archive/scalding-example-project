@@ -103,7 +103,7 @@ limitations under the License.
 [wordcount]: https://github.com/twitter/scalding/blob/master/README.md
 [scalding]: https://github.com/twitter/scalding/
 [snowplow]: http://snowplowanalytics.com
-[snowplow-hadoop-etl]: https://github.com/snowplow/snowplow/tree/master/3-etl/hadoop-etl
+[snowplow-hadoop-etl]: https://github.com/snowplow/snowplow/tree/master/3-enrich/hadoop-etl
 [emr]: http://aws.amazon.com/elasticmapreduce/
 [downloads]: https://github.com/snowplow/scalding-example-project/downloads
 [hello-txt]: https://github.com/snowplow/scalding-example-project/raw/master/data/hello.txt
