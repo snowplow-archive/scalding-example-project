@@ -34,7 +34,7 @@ The `assembly` command above runs the test suite - but you can also run this man
 
 ### Prepare
 
-First, upload the jar to S3 - if you haven't yet built the project (see above), you can grab the latest copy of the jar from this repo's [Downloads] [downloads].
+Assuming you have already assembled the jarfile (see above), now upload the jar to Amazon S3.
 
 Next, upload the data file [`data/hello.txt`] [hello-txt] to S3.
 
@@ -105,7 +105,6 @@ limitations under the License.
 [snowplow]: http://snowplowanalytics.com
 [snowplow-hadoop-etl]: https://github.com/snowplow/snowplow/tree/master/3-enrich/hadoop-etl
 [emr]: http://aws.amazon.com/elasticmapreduce/
-[downloads]: https://github.com/snowplow/scalding-example-project/downloads
 [hello-txt]: https://github.com/snowplow/scalding-example-project/raw/master/data/hello.txt
 [emr-client]: http://aws.amazon.com/developertools/2264
 [elasticity]: https://github.com/rslifka/elasticity
