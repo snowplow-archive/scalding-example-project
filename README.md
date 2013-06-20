@@ -81,7 +81,11 @@ And comment out the Hadoop jar exclusions:
 
 Fork this project and adapt it into your own custom Scalding job.
 
-Use the excellent [Elasticity] [elasticity] Ruby library to invoke/schedule your Scalding job on EMR.
+To invoke/schedule your Scalding job on EMR, check out:
+
+* [Spark Plug] [spark-plug] for Scala
+* [Elasticity] [elasticity] for Ruby
+* [Boto] [boto] for Python
 
 ## Roadmap
 
@@ -108,4 +112,6 @@ limitations under the License.
 [hello-txt]: https://github.com/snowplow/scalding-example-project/raw/master/data/hello.txt
 [emr-client]: http://aws.amazon.com/developertools/2264
 [elasticity]: https://github.com/rslifka/elasticity
+[spark-plug]: https://github.com/ogrodnek
+[boto]: http://boto.readthedocs.org/en/latest/ref/emr.html
 [license]: http://www.apache.org/licenses/LICENSE-2.0
