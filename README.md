@@ -6,7 +6,9 @@ This is Twitter's [`WordCountJob`] [wordcount] example for [Scalding] [scalding]
 
 This was built as a Scala SBT project by the [Snowplow Analytics] [snowplow] team, as a proof of concept for porting our ETL process to Scalding to run on [Amazon Elastic MapReduce] [emr].
 
-For a much fuller Scalding example, see the Snowplow [Hadoop ETL] [snowplow-hadoop-etl] project.
+For a much fuller Scalding example, see the Snowplow [Hadoop Enrich] [snowplow-hadoop-enrich] project.
+
+_See also:_ [Spark Example Project] [spark-example-project]
 
 ## Building
 
@@ -108,7 +110,8 @@ limitations under the License.
 [wordcount]: https://github.com/twitter/scalding/blob/master/README.md
 [scalding]: https://github.com/twitter/scalding/
 [snowplow]: http://snowplowanalytics.com
-[snowplow-hadoop-etl]: https://github.com/snowplow/snowplow/tree/master/3-enrich/hadoop-etl
+[snowplow-hadoop-enrich]: https://github.com/snowplow/snowplow/tree/master/3-enrich/scala-hadoop-enrich
+[spark-example-project]: https://github.com/snowplow/spark-example-project
 [emr]: http://aws.amazon.com/elasticmapreduce/
 [hello-txt]: https://github.com/snowplow/scalding-example-project/raw/master/data/hello.txt
 [emr-client]: http://aws.amazon.com/developertools/2264
