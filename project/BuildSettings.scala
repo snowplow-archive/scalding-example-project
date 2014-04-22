@@ -18,9 +18,9 @@ object BuildSettings {
   // Basic settings for our app
   lazy val basicSettings = Seq[Setting[_]](
     organization  := "SnowPlow Analytics Ltd",
-    version       := "0.0.4",
+    version       := "0.0.5",
     description   := "The Scalding WordCountJob example as a standalone SBT project, ready for Amazon EMR",
-    scalaVersion  := "2.9.2", // -> 2.10.0 when Scalding is ready
+    scalaVersion  := "2.10.4",
     scalacOptions := Seq("-deprecation", "-encoding", "utf8"),
     resolvers     ++= Dependencies.resolutionRepos
   )
@@ -31,7 +31,7 @@ object BuildSettings {
   lazy val sbtAssemblySettings = assemblySettings ++ Seq(
 
     // Slightly cleaner jar name
-    jarName in assembly <<= (name, version) { (name, version) => name + "-" + version + ".jar" },
+    jarName in assembly := { name.value + "-" + version.value + ".jar" },
     
     // Drop these jars
     excludedJars in assembly <<= (fullClasspath in assembly) map { cp =>

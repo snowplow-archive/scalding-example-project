@@ -1,6 +1,9 @@
 *.class
 *.log
 
+# ide specific
+.idea*
+
 # sbt specific
 dist/*
 target/
