@@ -17,7 +17,7 @@ object BuildSettings {
 
   // Basic settings for our app
   lazy val basicSettings = Seq[Setting[_]](
-    organization  := "SnowPlow Analytics Ltd",
+    organization  := "com.snowplowanalytcs",
     version       := "0.0.5",
     description   := "The Scalding WordCountJob example as a standalone SBT project, ready for Amazon EMR",
     scalaVersion  := "2.10.4",
