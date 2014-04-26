@@ -20,7 +20,7 @@ Assuming you already have SBT installed:
 
 The 'fat jar' is now available as:
 
-    target/scalding-example-project-0.0.4.jar
+    target/scalding-example-project-0.0.5.jar
 
 ## Unit testing
 
