@@ -18,7 +18,7 @@ import org.specs2.mutable.Specification
 // Scalding
 import com.twitter.scalding._
 
-class WordCountTest extends Specification with TupleConversions {
+class WordCountTest extends Specification {
   "A WordCount job" should {
     JobTest("com.snowplowanalytics.hadoop.scalding.WordCountJob").
       arg("input", "inputFile").
